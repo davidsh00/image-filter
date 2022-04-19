@@ -1,30 +1,34 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- import style -->
-    <link rel="stylesheet" href="./asset/styles/style.css">
+    <link rel="stylesheet" href="./asset/styles/style.css" />
     <title>Image-Filter</title>
-</head>
-<body>
+  </head>
+  <body>
     <header></header>
     <main class="upload">
-        <div class="uploader-wrapper fc">
-            <form id="uploadImageForm" class="fc" draggable="true">
-                <input type="file" id="inputUpload" accept="image/*">
-                <label for="inputUpload">
-                    upload your Image
-                </label>
-                <p>or Drog your image to this section</p>
-            </form>
-      
+      <div class="uploader-wrapper fc">
+        <form id="uploadImageForm" class="fc" draggable="true">
+          <input type="file" id="inputUpload" accept="image/*" />
+          <label for="inputUpload"> upload your Image </label>
+          <p>or Drog your image to this section</p>
+        </form>
+      </div>
+      <div class="filter-wrapper">
+        <div class="filter_list-container">
+          <h3 class="filter-title">Filters:</h3>
+          <div class="filters-list">
+          </div>
         </div>
-        <div class="filter-wrapper fc">
-           
+        <div class="image-container fc">
+          
         </div>
+      </div>
     </main>
     <footer></footer>
-    <script src="./asset/js/upload.js"></script>
-</body>
+    <script src="./asset/js/main.js" type="module"></script>
+  </body>
 </html>
