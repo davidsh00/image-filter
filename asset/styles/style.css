@@ -1,0 +1,73 @@
+/* reset file */
+@import url("https://meyerweb.com/eric/tools/css/reset/reset.css");
+
+/*************************
+        Global styles
+**************************/
+body {
+  font-family: sans-serif;
+}
+/*************************
+        Global class
+**************************/
+
+.fc {
+  /*center child*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/**************************
+        Uploader
+***************************/
+.uploader-wrapper {
+  width: 100vw;
+  height: 100vh;
+}
+.uploader-wrapper #uploadImageForm {
+  border: 3px dotted black;
+  width: clamp(0px, 80%, 900px);
+  height: clamp(0px, 80%, 500px);
+  flex-direction: column;
+  gap: 2rem;
+  transition: all .1s;
+}
+.uploader-wrapper #uploadImageForm.highlight{
+    background-color: #eee;
+}
+
+.uploader-wrapper #inputUpload {
+  display: none;
+}
+.uploader-wrapper *[for] {
+  background-color: rgba(255, 0, 0, 0.4);
+  color: white;
+
+  cursor: pointer;
+  padding:1.2rem 1rem ;
+  border-radius: 5px;
+  transition: all 0.2s;
+}
+.uploader-wrapper *[for]:hover {
+transform: scale(1.05);
+color: rgb(64, 64, 64);
+}
+.filter-wrapper {
+    
+    width: 100vw;
+    height: 100vh;
+}
+
+main.upload .uploader-wrapper{
+    display: flex!important;
+}
+main.upload .filter-wrapper{
+    display: none!important;
+}
+main.filter .uploader-wrapper{
+    display: none!important;
+}
+main.filter .filter-wrapper{
+    display: flex!important;
+}
